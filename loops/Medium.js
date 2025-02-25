@@ -2,8 +2,18 @@
 // check for primer number
 
 function primeChecker(number){
+    if(number <=1) return false;
+    for(let i=2; i<number; i++){
+        if(number%i === 0){
+            return false;
+        }
+        else{
+            return true
+        }
+    };
+};
+console.log(primeChecker(4));
 
-}
 
 
 // -------------------------------------- 7 -------------------------------------------
@@ -40,13 +50,44 @@ console.log(findLargestAndSmallest([1,2,5,3]));
 // fibonacci sequence
 // print the first N fibonacci numbers using a loop.
 
+function findFibonacci(number){
+    let a=0;
+    let b=1;
+    let fib=[a,b];
+    for(let i=2; i<number; i++){
+        let next=a+b;
+        fib.push(next);
+        a=b;
+        b=next;
+    };
+    return fib;
+};
+console.log(findFibonacci(5));
+
 
 
 
 // ---------------------------------------------- 10 -----------------------------------
 // palindrome checker
-// write a programe that cheecks if a fiven number is a palindrome (example: 121 -> true, 123 -> false).
+// write a programe that cheecks if a given number is a palindrome (example: 121 -> true, 123 -> false).
 
+function palindromeChecker(number){
+    let revers=0;
+    let originNumber=number;
+    while(number>0){
+        let lastIndex=number%10;
+        revers=revers*10+lastIndex;
+        number=Math.floor(number/10);
+    }
+    if (revers === originNumber){
+        return true;
+    }
+    else{
+        return false;
+    };
+};
+console.log(palindromeChecker(121));
+console.log(palindromeChecker(123));
 
 
 
