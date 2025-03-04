@@ -15,6 +15,21 @@
 
 
 
+// ------------------------------------- 12 ------------------------------
+//  Convert Decimal to Binary 
+
+function decimalToBinary(n){
+    // 00000000
+    // 0000000 1
+    // 000000 2 1
+    // 00000 4 2 1
+    // 0000 8 4 2 1
+    // 000 16 8 4 2 1
+    // 00 32 16 8 4 2 1
+    // 0 64 32 16 8 4 2 1
+    // 128 64 32 16 8 4 2 1
+
+}
 
 
 
@@ -46,32 +61,8 @@
 
 
 
-// function binarySearch(arr, target){
-//     let mid;
-//     // let mid=Math.floor(arr.length/2);
-//     let smallerArr=[];
-//     let biggerArr=[];
-//     if(target === arr[mid] ){
-//         return mid;
-//     }
-//     for(let i=0; i<arr.length; i++){
-//          mid=Math.floor(arr.length/2);
-//         if(arr[i]<mid){
-//             smallerArr.push(arr[i]); 
-//             arr= [...smallerArr]; 
-//         }
-//         else{
-//             biggerArr.push(arr[i]);
-//             arr=[...biggerArr];
-//         };
-         
-//     };
 
-//     console.log(smallerArr);
-//     console.log(biggerArr); 
-//     return -1;  
-// };
-// // binarySearch([1,2,3,4,5,6,7],4);
-// console.log(binarySearch([1,2,3,4,5,6,7,8,9,10,11,12],3));
+
+
 
  
