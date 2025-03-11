@@ -6,13 +6,12 @@ function primeChecker(number){
     for(let i=2; i<number; i++){
         if(number%i === 0){
             return false;
-        }
-        else{
-            return true
-        }
+        };
     };
+    return true;
 };
 console.log(primeChecker(4));
+console.log(primeChecker(5));
 
 
 

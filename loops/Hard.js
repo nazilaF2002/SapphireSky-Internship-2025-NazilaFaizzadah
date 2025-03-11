@@ -29,7 +29,7 @@ console.log(armstrongChecker(123));
 // ----------------------------------------------- 12 -------------------------------------------
 // Collatz Sequence (Hailstone Numbers)
 
-function Collatz(number){
+function collatz(number){
     let count=0;
     while(number > 1){
         if(number%2 === 0){
@@ -43,22 +43,15 @@ function Collatz(number){
     };
     return count;
 };
-console.log(Collatz(6));
-console.log(Collatz(10));
+console.log(collatz(6));
+console.log(collatz(10));
 
 // ------------------------------------- 13 --------------------------------------
 //  Find GCD (Greatest Common Divisor) 
 
 function findGCD(num1,num2){
-    let greatestNumber=num1;
-    let smallestNumber=num2;
-    let remainder=0;
-    if(num2>num1){
-        greatestNumber=num2;
-    }
-    if(num1<num2){
-        smallestNumber=num1;
-    }
+    let greatestNumber = num1 > num2 ? num1 : num2;
+    let smallestNumber = num1 < num2 ? num1 : num2;    
      while(greatestNumber%smallestNumber !== 0){
          remainder=greatestNumber%smallestNumber;
          greatestNumber=smallestNumber;
@@ -112,7 +105,7 @@ function guessNumber(){
      num=parseInt(num);
      while(num !== random){
         if(num>random){
-            console.log('Too heigh');
+            console.log('Too high');
         }
         else if(num<random){
             console.log('Too low');
