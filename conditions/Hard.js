@@ -1,7 +1,7 @@
 // --------------------------------- 8 ---------------------------------------
 // body mass index BMI calculator
 
-function BMI_Calculator(w,h){
+function bmiCalculator(w,h){
     let BMI = w/(h*h);
     if(BMI < 18.5){
         console.log('you are underweight');
@@ -18,7 +18,7 @@ function BMI_Calculator(w,h){
     };
 };
 
-BMI_Calculator(120,1.70);
+bmiCalculator(120,1.70);
 
 // ----------------------------------------- 9 ----------------------------------
 // electricity bill calculator 

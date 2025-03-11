@@ -61,10 +61,7 @@ findMinimum(6,6);
 // Leap Year checker
 
 function LeapYear(year){
-    if (year % 4 == 0 && year%100 != 0){
-        console.log('this is a leap year');
-    }
-    else if(year % 100 == 0 && year % 400 == 0){
+    if (year % 4 == 0 && year%100 != 0 || year % 100 == 0 && year % 400 == 0){
         console.log('this is a leap year');
     }
     else{
