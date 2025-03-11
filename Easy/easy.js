@@ -128,17 +128,9 @@ months(3);
 const checkVowel=(letter)=>{
     switch(letter.toLowerCase()){
         case 'a':
-          console.log('vowel');
-        break;
         case 'e':
-            console.log('vowel');
-            break;
         case 'i':
-            console.log('vowel');
-            break;
-        case 'o':
-            console.log('vowel');
-            break;  
+        case 'o': 
         case 'u':
             console.log('vowel');
             break;      
