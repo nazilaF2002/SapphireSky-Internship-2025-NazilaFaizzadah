@@ -3,11 +3,12 @@
 
 function isPrime(n){
     if(n<=1) return false;
-    let primeChecker=true;
     for(let i=2; i<n; i++){
-        primeChecker=(n%i ===0 )? false:primeChecker;
+        if(n%i === 0){
+            return false;
+        }
     };
-    return primeChecker;
+    return true;
 };
 console.log(isPrime(9));
 console.log(isPrime(11));
@@ -28,15 +29,8 @@ console.log(factorial(5));
 // Find the GCD of Two Numbers using Euclidean algorithm.
 
 function findGCD(num1,num2){
-    let greatestNumber=num1;
-    let smallestNumber=num2;
-    let remainder=0;
-    if(num2>num1){
-        greatestNumber=num2;
-    }
-    if(num1<num2){
-        smallestNumber=num1;
-    }
+    let greatestNumber = num1 > num2 ? num1 : num2;
+    let smallestNumber = num1 < num2 ? num1 : num2;    
      while(greatestNumber%smallestNumber !== 0){
          remainder=greatestNumber%smallestNumber;
          greatestNumber=smallestNumber;
@@ -49,38 +43,36 @@ console.log('GCD IS : ',findGCD(18,48));
 // ---------------------------------- 9 -------------------------------------
 // Find the nth Fibonacci Number 
 
-function fibonacci(n){
-    let a=0;
-    let b=1;
-    let fib=[a,b];
-    for(let i=2; i<=n; i++){
-        let next=a+b;
-        fib.push(next);
-        a=b;
-        b=next;
-    };
-    return fib[fib.length-1];
+function fibonacci(n) {
+    let a = 0;
+    let b = 1;
+    for (let i = 2; i <= n; i++) {
+        let next = a + b;
+        a = b;
+        b = next;
+    }
+    return b; 
 };
-console.log('the nth number is : ',fibonacci(7));
+console.log('The nth number is:', fibonacci(7));  
+console.log('the nth number is : ',fibonacci(10));
 
 
 // ---------------------------------- 10 -------------------------------------
 // Check if a String is a Palindrome 
 
-function isPalindrome(str){
-    let reverse='';
-    let originStr=str;
-    for(let i=str.length-1; i>=0; i--){
-        reverse+=str[i];
-    };
-    if(reverse == originStr){
-       return  true;
+function isPalindrome(str) {
+    let left = 0;
+    let right = str.length - 1;
+    while (left < right) {
+        if (str[left] !== str[right]) {
+            return false;
+        }
+        left++;
+        right--;
     }
-    else{
-        return false;
-    };
+    return true;  
 };
-console.log(isPalindrome('lsl'));
+console.log(isPalindrome('lsl'));    
 console.log(isPalindrome('hello'));
 
 

@@ -2,10 +2,11 @@
 // Convert Celsius to Fahrenheit 
 // F=(C×9/5)+32
 function celsiusToFahrenheit(celsius){
-  let F=celsius*(9/5)+32;
-  console.log(F);
+  let Fahrenheit=celsius*(9/5)+32;
+  return Fahrenheit; 
 };
-celsiusToFahrenheit(25);
+console.log(celsiusToFahrenheit(25));
+
 
 // --------------------------------- 2 --------------------------------------
 //  Find the Maximum of Three Numbers 
