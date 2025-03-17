@@ -1,7 +1,7 @@
 // ---------------------------------------- 1 ---------------------------------------
 // Check odd or even
 
-function odd_or_even(number){
+function oddOrEven(number){
  if(number%2 == 0){
     console.log('the number is even');
  }
@@ -9,13 +9,13 @@ function odd_or_even(number){
     console.log('the number is odd');
  }
 };
-odd_or_even(25);
-odd_or_even(250);
+oddOrEven(25);
+oddOrEven(250);
 
 // ---------------------------------------------- 2 ----------------------------------
 // Grade calculator
 
-function GradeCalculator(grade){
+function gradeCalculator(grade){
     if (grade >= 90 && grade <= 100){
         console.log('grade A');
     }
@@ -36,8 +36,8 @@ function GradeCalculator(grade){
     }
 };
 
-GradeCalculator(90);
-GradeCalculator(150);
+oddOrEven(90);
+oddOrEven(150);
 
 // ------------------------------------------ 3 ----------------------------------
 // Minimum of two numbers
@@ -60,7 +60,7 @@ findMinimum(6,6);
 // --------------------------------------------------- 4 ----------------------------------
 // Leap Year checker
 
-function LeapYear(year){
+function leapYear(year){
     if (year % 4 == 0 && year%100 != 0 || year % 100 == 0 && year % 400 == 0){
         console.log('this is a leap year');
     }
@@ -68,7 +68,7 @@ function LeapYear(year){
         console.log('thia is not a leap year');
     }
 };
- LeapYear(2024);
- LeapYear(2100);
+ leapYear(2024);
+ leapYear(2100);
 
 

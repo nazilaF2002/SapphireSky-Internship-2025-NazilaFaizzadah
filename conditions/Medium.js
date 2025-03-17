@@ -33,18 +33,18 @@ checkSpeed(105);
 // ---------------------------------------- 7 ---------------------------------
 // ATM Withdrawal
 
-function Withdrawal(amount){
-    let Total_amout=200000;
-    if(amount %10 == 0 && amount <= Total_amout){
+function withdrawal(amount){
+    let totalAmout=200000;
+    if(amount %10 == 0 && amount <= totalAmout){
         console.log(`you withdrawaled ${amount} successfully!`);
     }
-    else if(amount %10 != 0 && amount <= Total_amout){
+    else if(amount %10 != 0 && amount <= totalAmout){
         console.log('your amount is not valid! it should be a multiple of 10.');
     }
     else{
         console.log('your money is not enough!');
     }
 };
-Withdrawal(300000000000);
-Withdrawal(30000);
-Withdrawal(3001);
+withdrawal(300000000000);
+withdrawal(30000);
+withdrawal(3001);

@@ -2,17 +2,17 @@
 // body mass index BMI calculator
 
 function bmiCalculator(w,h){
-    let BMI = w/(h*h);
-    if(BMI < 18.5){
+    let bmi = w/(h*h);
+    if(bmi < 18.5){
         console.log('you are underweight');
     }
-    else if ( BMI >= 18.5 && BMI < 25){
+    else if ( bmi >= 18.5 && bmi < 25){
         console.log('you have normal weight');
     }
-    else if ( BMI >= 25 && BMI < 30){
+    else if ( bmi >= 25 && bmi < 30){
         console.log('you are overweight');
     }
-    else if(BMI >= 30){
+    else if(bmi >= 30){
         console.log('your are obese');
         
     };
@@ -48,7 +48,7 @@ console.log(billCalculator(150));
 // ----------------------------------------------- 10 ----------------------------------
 // password strength checker
 
-function check_password(password){
+function checkPassword(password){
     if(password.length > 8){
        if(password.match(/[a-z]/) && password.match(/[A-Z]/) && password.match(/[0-9]/) ){
         console.log('strong password');
@@ -62,4 +62,4 @@ function check_password(password){
         
     };
 };
-check_password('lfjs3lsjF');
+checkPassword('lfjs3lsjF');
