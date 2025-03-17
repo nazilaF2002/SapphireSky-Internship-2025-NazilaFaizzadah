@@ -22,12 +22,12 @@ console.log(sum(3));
 // ----------------------------------- 3 -------------------------------------
 // Multiplication table
  
-function Multiplication(n){
+function multiplication(n){
     for(let i=1; i<=10; i++){
         console.log(`${i} * ${n} = ${i*n}`);
     }
 };
-console.log(Multiplication(3));
+console.log(multiplication(3));
 
 // ------------------------------------- 4 ----------------------------------------
 // reverse a Number
