@@ -17,3 +17,18 @@ function printPrimeNumbers() {
 };
 
 printPrimeNumbers();
+
+
+// ------------------------------------------------ 2 ---------------------------------------------
+// Pascal’s Triangle 
+// Generate Pascal’s Triangle up to N rows. 
+
+
+
+
+
+
+
+// ------------------------------------------------ 3 ---------------------------------------------
+// Matrix Multiplication 
+// Given two matrices, multiply them using nested loops.
